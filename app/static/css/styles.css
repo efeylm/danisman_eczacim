@@ -1,0 +1,62 @@
+/* Additional styles for Danışman Eczacım */
+
+/* Custom styling for cards */
+.prescription-card {
+    transition: transform 0.2s;
+}
+
+.prescription-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Status icon styling */
+.status-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Custom form input focus */
+.form-control:focus, .form-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+}
+
+/* Custom button styling */
+.btn-custom {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #1a252f;
+    border-color: #1a252f;
+    color: white;
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+}
+
+.pulse-animation {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Custom checkbox styling */
+.custom-checkbox .form-check-input:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+} 
